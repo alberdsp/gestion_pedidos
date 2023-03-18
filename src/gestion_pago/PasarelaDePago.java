@@ -1,8 +1,10 @@
 /**
  * 
  */
-package gestion_pedidos;
+package gestion_pago;
 import java.util.Date;
+
+import validadores.Validar_tarjeta;
 
 
 /**
@@ -59,7 +61,7 @@ public class PasarelaDePago {
 			 this.codigoPago = ahora.getTime(); 
 			 
 		 }
-		return devolucion.Cambio_final();
+		return devolucion.cambioFinal();
 	}
 	
 	

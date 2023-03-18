@@ -1,7 +1,7 @@
 /**
  * 
  */
-package gestion_pedidos;
+package cliente;
 
 import java.util.Date;
 

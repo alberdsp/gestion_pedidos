@@ -1,4 +1,4 @@
-package gestion_pedidos;
+package validadores;
 
 public class Validar_tarjeta {
 

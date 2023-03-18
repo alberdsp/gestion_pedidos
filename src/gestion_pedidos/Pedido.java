@@ -5,6 +5,10 @@ package gestion_pedidos;
 
 import java.lang.System;
 
+import cliente.Cliente;
+import gestion_pago.PasarelaDePago;
+import productos.Producto;
+
 /**
  * @author Alber 2023 clase Pedido
  *
@@ -19,8 +23,8 @@ public class Pedido {
 	private Producto producto1;
 	private Producto producto2;
 	private Double importeTotal;
-	private PasarelaDePago Pago;
-	private String Estado; // PAGADO , PREPARANDO , LISTO , SERVIDO
+	private PasarelaDePago pago;
+	private String estado; // PAGADO , PREPARANDO , LISTO , SERVIDO
 	private int lineas;  // controlamos las lineas de pedido que hay
 
 	// constructor
@@ -102,29 +106,7 @@ public class Pedido {
 
 		}
 
-//		System.out.println(producto.toUpperCase());
-//		System.out.println(producto1.getNombre());
-//		String aeliminar = producto1.getNombre();
-//		String aeliminar2 = producto2.getNombre();
-//		
-//		if (producto.toUpperCase() == aeliminar) {
-//             
-//			producto1 = null;
-//			eliminado = true;
-//			System.out.println(producto.toUpperCase());
-//			
-//		   }    
-//		
-//		if (producto.toUpperCase() == aeliminar2) {
-//
-//				producto2 = null;
-//				System.out.println("producto2 eliminado");
-//				eliminado = true;
-//
-//			} 
-//
-//		
-//		System.out.println(eliminado);
+
 		return eliminado;
 
 	}
@@ -137,20 +119,20 @@ public class Pedido {
 
 	
 	public PasarelaDePago getPago() {
-		return Pago;
+		return pago;
 	}
 
 	public void setPago(PasarelaDePago pago) {
-		this.Pago = pago;
+		this.pago = pago;
 						
 	}
 
 	public String getEstado() {
-		return Estado;
+		return estado;
 	}
 
 	public void setEstado(String estado) {
-		this.Estado = estado;
+		this.estado = estado;
 	}
 
 	// metodos
@@ -159,7 +141,7 @@ public class Pedido {
 	// 1 Efectivo 2 Tarjeta 3 Cuenta bancaria
 	
 	
-	public int Pagar(int TipoPago) {
+	public int efectuarPago(int TipoPago) {
 
 		// falta desarrollarlo
 

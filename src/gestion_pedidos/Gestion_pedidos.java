@@ -17,6 +17,12 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.Scanner;
 
+import cliente.Cliente;
+import gestion_pago.PasarelaDePago;
+import productos.Producto;
+import validadores.Validar_fecha;
+import validadores.Validar_importe;
+
 public class Gestion_pedidos {
 
 	public static void main(String[] args) {

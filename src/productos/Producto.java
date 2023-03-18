@@ -1,7 +1,7 @@
 /**
  * 
  */
-package gestion_pedidos;
+package productos;
 
 import java.math.*;
 
@@ -13,9 +13,9 @@ public class Producto {
 
 	// atributos
 
-	private String Nombre;
-	private Double Precio;
-	private int Cantidad;
+	private String nombre;
+	private Double precio;
+	private int cantidad;
 
 	
 
@@ -29,33 +29,33 @@ public class Producto {
 	// getters y setters
 
 	public String getNombre() {
-		return Nombre;
+		return nombre;
 	}
 
 	public void setNombre(String nombre) {
 
 		// lo ponemos por defecto en mayúsculas
 
-		this.Nombre = nombre.toUpperCase();
+		this.nombre = nombre.toUpperCase();
 	}
 
 	public Double getPrecio() {
-		return Precio;
+		return precio;
 	}
 
 	// precio redondeado a 2 decimales
 
 	public void setPrecio(Double precio) {
 
-		this.Precio = Math.round(precio * 100.0) / 100.0;
+		this.precio = Math.round(precio * 100.0) / 100.0;
 	}
 
 	public int getCantidad() {
-		return Cantidad;
+		return cantidad;
 	}
 
 	public void setCantidad(int cantidad) {
-		this.Cantidad = cantidad;
+		this.cantidad = cantidad;
 		
 	}
 	

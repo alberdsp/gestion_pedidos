@@ -1,4 +1,4 @@
-package gestion_pedidos;
+package gestion_pago;
 
 public class Devolver_cambio {
 
@@ -23,7 +23,9 @@ public class Devolver_cambio {
 	}
 
 	// declaramos método que devuelve el string con el cambio
-	public String Cambio_final() {
+	
+	public String cambioFinal() {
+		
 		String cambio_final = "";
 
 		// variables para almacenar las cantidades de cada billete y moneda
